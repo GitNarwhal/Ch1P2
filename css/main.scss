@@ -64,11 +64,11 @@ h2, u1 {
 
 .bio-image {
   display: inline-block;
-  transition: transform 0.3s;
+  transition: transform .3s;
 }
 
 .bio-image:hover {
-  animation: spin 1s linear infinite;
+  animation: spin .2s linear infinite;
 }
 
 .container {

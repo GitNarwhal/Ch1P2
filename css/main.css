@@ -60,7 +60,7 @@ h2, u1 {
 }
 
 .bio-image:hover {
-  animation: spin 1s linear infinite;
+  animation: spin 0.2s linear infinite;
 }
 
 .container {
