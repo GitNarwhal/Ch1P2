@@ -29,8 +29,12 @@ body, html {
     position: absolute;
     background-color: map-get($colors, accent);
     clip-path: polygon(8% 0, 100% 0, 72% 100%, 0% 100%);
+  padding: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
 
-  }
+  
 
 body {
     height: 100%;
@@ -53,6 +57,20 @@ h2, u1 {
     float: right;
   }
 
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.bio-image {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.bio-image:hover {
+  animation: spin 1s linear infinite;
+}
+
 .container {
     max-width: 800px;
     width: 100%;
@@ -60,6 +78,16 @@ h2, u1 {
     text-align: center;
 }
 
+
+.hk-image {
+    opacity: .2;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.hk-image:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
 
 
 

@@ -20,6 +20,9 @@ body, html {
   background-color: #66ff66;
   -webkit-clip-path: polygon(8% 0, 100% 0, 72% 100%, 0% 100%);
           clip-path: polygon(8% 0, 100% 0, 72% 100%, 0% 100%);
+  padding: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
 body {
@@ -43,9 +46,36 @@ h2, u1 {
   float: right;
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.bio-image {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.bio-image:hover {
+  animation: spin 1s linear infinite;
+}
+
 .container {
   max-width: 800px;
   width: 100%;
   padding: 20px;
   text-align: center;
+}
+
+.hk-image {
+  opacity: 0.2;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.hk-image:hover {
+  transform: scale(1.05);
+  opacity: 1;
 }/*# sourceMappingURL=main.css.map */
